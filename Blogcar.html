@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Blogcar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/
+    font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <title>Mercedes-Benz</title>
+</head>
+
+<body>
+    <section class="header" id="header">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">Mercedes-Benz</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">Mercedes-EQ</a></li>
+                    <li><a href="#">Mercedes-AMG</a></li>
+                    <li><a href="#">Mercedes-Maybach</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="row">
+                <div class="left-sec">
+                    <div class="content">
+                        <h2><span>Tìm hiểu thêm</span><br>Biểu tượng độc tôn</h2>
+                        <p> Lưới tản nhiệt ấn tượng với thiết kế thanh nan dọc sang trọng tạo nên
+                            một tổng thể Mercedes-Maybach hoàn hảo đáng kinh ngạc</p>
+                    </div>
+                    <button class="discover-btn">
+                        <a href="#">discover></a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+                    </button>
+                    <div class="infomation">
+                        <div class="production">
+                            <p>Production</p>
+                            <h2>2019-2022</h2>
+                        </div>
+                        <div class="production">
+                            <p>Designer</p>
+                            <h2>Sunnyvale </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-sec">
+                    <div class="my-car">
+                        <div><img src="gls1.png"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".my-car").slick({
+                autoplay: true,
+                dots: true,
+                speed: 1000,
+                customPaging : function(slider, i) {
+                    var thumb = $ (slider.$slider[i]).data();
+                    return '<a>'+(i+1)+'</a>';
+                },
+            })
+        })
+    </script>
+</body>
+
+</html>
