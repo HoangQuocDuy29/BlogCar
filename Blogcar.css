@@ -29,7 +29,10 @@ html{
 section{
     padding:2rem 9%;
 }
-
+.imagechange{
+    max-width: 100%;
+    height: 60px;
+}
 .heading{
     padding-bottom: 2rem;
     text-align: center;
